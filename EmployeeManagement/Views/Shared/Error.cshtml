@@ -1,0 +1,31 @@
+﻿
+@if (ViewBag.ErrorTitle == null)
+{
+    <h3>The support team is notified and we are working on the fix.</h3>
+    <h5>Please contact us on hasnat.47@gmail.com</h5>
+    <hr />
+}
+else
+{
+    <h1 class="text-danger">@ViewBag.ErrorTitle</h1>
+    <h6 class="text-danger">@ViewBag.ErrorMessage</h6>
+}
+
+@*<h3>Exception Details:</h3>
+    <div class="alert alert-danger">
+        <h5>Exception path</h5>
+        <hr />
+        <p>@ViewBag.ExceptionPath</p>
+    </div>
+
+    <div class="alert alert-danger">
+        <h5>Exception Message</h5>
+        <hr />
+        <p>@ViewBag.ExceptionMessage</p>
+    </div>
+
+    <div class="alert alert-danger">
+        <h5>Exception stack trace</h5>
+        <hr />
+        <p>@ViewBag.Stacktrace</p>
+    </div>*@
